@@ -28,15 +28,15 @@ export function App() {
     }
   };
 
-  return (
-    <>
-      <Description />
-      <Options handleClick={handleClick} />
-      {totalFeedback > 0 ? (
-        <Feedback clicks={clicks} totalFeedback={totalFeedback} positivePercentage={positivePercentage} />
-      ) : (
-        <Nothing />
-      )}
-    </>
-  );
+return (
+  <>
+    <Description />
+    <Options handleClick={handleClick} totalFeedback={totalFeedback} />
+    {totalFeedback > 0 ? (
+      <Feedback clicks={clicks} totalFeedback={totalFeedback} positivePercentage={positivePercentage} />
+    ) : (
+      <Nothing />
+    )}
+  </>
+);
 }
