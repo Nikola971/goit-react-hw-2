@@ -2,7 +2,7 @@
 import React from 'react';
 import css from "./Optionscss.module.css";
 
-const Options = ({ handleClick, totalFeedback }) => {
+export const Options = ({ handleClick, totalFeedback ,positivePercentage}) => {
   return (
     <div>
       <button onClick={() => handleClick('good')}>Good</button>
@@ -18,4 +18,3 @@ const Options = ({ handleClick, totalFeedback }) => {
   );
 };
 
-export default Options;
